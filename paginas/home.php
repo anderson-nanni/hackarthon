@@ -8,13 +8,12 @@
 	<?php
 		$sql = "select * from veiculo inner join marca on veiculo.marca_id = marca.id order by rand() limit 8";
 		$result = mysqli_query($con, $sql);
-
 		while ( $dados = mysqli_fetch_array( $result ) ) {
 			//separar
 			$id = $dados["id"];
 			$veiculo = $dados["modelo"];
 			$marca = $dados["marca"];
-			$imagem = $dados["fotoDestaque"];
+			$imagem = $dados["fotodestaque"];
 			$valor = $dados["valor"];
 			$tipo = $dados["tipo"];
 
@@ -23,10 +22,13 @@
 			} else {
 				$valor = "R$ " . number_format($valor, 2, ",", ".");
 			}
+			$ext = strrchr($imagem,'.');
+
+			
 
 			echo "<div class='col-12 col-md-4 text-center produtos'>
 				<img src='images/{$imagem}.jpg' alt='{$veiculo}' class='w-100 h-60'>
-				<h3>{$marca} - {$veiculo}</h3>
+				<h3>{$marca} - {$ext}</h3>
 				<p>{$tipo}</p>
 				<p class='valor'>{$valor}</p>
 				<p>
@@ -37,5 +39,6 @@
 			</div>";
 
 		}
+
 	?>
 </div>
