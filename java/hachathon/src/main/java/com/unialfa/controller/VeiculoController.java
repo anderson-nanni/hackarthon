@@ -71,6 +71,8 @@ public class VeiculoController {
 	@PostMapping("editar/salvar")
 	public String atualizar(Veiculo veiculo, MultipartFile imagemFile) {
 		fotoService.uploadFotoDestaqueTarget(imagemFile);
+		veiculo.setFotoDestaque(fotoService.uploadFotoDestaque(imagemFile));
+		
 		repoVeiculo.save(veiculo);
 		return "redirect:../listar";
 	}

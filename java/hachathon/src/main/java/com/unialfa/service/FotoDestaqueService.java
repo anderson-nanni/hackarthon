@@ -11,7 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class FotoDestaqueService {
-	private final String uploadDir = "//localhost:3306/multi";
+	private final String uploadDir = "localhost/pasta-teste";
 
 	public String getUploadDir() {
 		return uploadDir;
@@ -34,7 +34,7 @@ public class FotoDestaqueService {
 			String url = getClass().getResource("/static/images_upload").toString();
 			url = url.replace("file:/", "");
 			Path path = Paths.get(url + "/"
-					+ StringUtils.cleanPath(file.getOriginalFilename().toString()));
+					+ StringUtils.cleanPath(file.getOriginalFilename()));
 			byte[] bytes = file.getBytes();
 			Files.write(path, bytes);
 			

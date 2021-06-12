@@ -8,8 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 @Entity
 public class Veiculo {
 

@@ -23,7 +23,7 @@
 				<tr th:each="m : ${marcas}">
 					<td th:text="${m.id}"></td>
 					<td th:text="${m.descricao}"></td>
-					<td><a th:href="@{editar/(id=${m.id})}" class="btn btn-warning">Editar</a></td>
+					<td><a th:href="@{editar/(id=${m.id})}" class="btn btn-primary">Editar</a></td>
 					<td><a th:href="@{excluir/(id=${m.id})}" class="btn btn-danger">Excluir</a></td>
 				</tr>
 			</tbody>

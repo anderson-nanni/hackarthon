@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>Cadastro de Funcionário</h1>
+			<h1>Cadastro de Marca</h1>
 			<div class="form-group">
 				<a href="/"><h1>voltar</h1></a>
 			</div>
@@ -19,7 +19,7 @@
 					
 					<input type="hidden" id="id" name="id" th:value="${marca.id}" th:if="${marca != null}">
 				</div>
-				<button type="submit" class="btn btn-primary">Salvar</button>
+				<button type="submit" class="btn btn-success">Salvar</button>
 			</form>
 
 		<div th:include="footer :: copy"></div>
