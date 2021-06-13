@@ -5,9 +5,9 @@
 	//usuario de conexao com o banco
 	$usuario  = "root";
 	//senha de conexao com o banco
-	$senha    = "am@2020#ti";
+	$senha    = "";
 	//nome do banco de dados
-	$banco    = "multi";
+	$banco    = "hackathon";
 
 	//$con - conexao(servidor, usuario, senha, banco)
 	$con = mysqli_connect($servidor,$usuario,$senha,$banco) or die ("Erro ao conectar no banco. Erro: ".mysqli_connect_error());
