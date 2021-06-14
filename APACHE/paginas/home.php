@@ -74,14 +74,14 @@
 					$valor = "R$ " . number_format($valor, 2, ",", ".");
 				}
 
-				$extensao = pathinfo('produtos/{$imagem}', PATHINFO_EXTENSION);
+				//$extensao = pathinfo("./admin/java/hackathon/src/main/resources/static/images_upload/{$imagem}", PATHINFO_EXTENSION);
 				
 				echo "
 					<div class=\"col-12 col-md-3 mb-3 text-center blocoTamanho\">
 						<div class=\"blocoProduto border\">
 							<div class=\"row-12 align-items-center blocoImagem\">
 								<a href=\"index.php?pagina=produto&id={$id}\">
-									<img src=\"admin/java/hackathon/src/main/resources/static/images_upload/{$imagem}{$extensao}\" alt=\"{$veiculo}\" class=\"w-100\">
+									<img src=\"./admin/java/hackathon/src/main/resources/static/images_upload/{$imagem}\" alt=\"{$veiculo}\" class=\"w-100\">
 								</a>
 							</div>
 							<div class=\"pl-3 pr-3 row-12\">
