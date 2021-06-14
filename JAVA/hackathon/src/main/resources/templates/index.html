@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+<meta charset="utf-8">
+
+<title>Hackarthon</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<link rel="shortcut icon" type="image/ico" th:href="@{/favicon_hackarthon.ico}"/>
+<link rel="stylesheet" th:href="@{/css/home.css}">
+<body>
+	<div class="container">
+		<div class="box">
+        		<h1 class="titulo">
+        			<img th:src="@{'/icons/logo_hackarthon.png'}" width="160" height="80"/>
+        		</h1>
+			<div class="colunaA">
+				<div class="">
+    			<a href="veiculo/cadastrar" class='btn btn-primary btnHome'>
+					<h2>
+						<samp th:text="${titulo1}"></samp>
+					</h2>
+				</a>
+				</div>
+				<div class="">
+				    <a href="cor/cadastrar" class='btn btn-primary btnHome'>
+						<h2>
+							<samp th:text="${titulo2}"></samp>
+						</h2>
+					</a>
+				</div>
+				<div class="">
+				    <a href="marca/cadastrar" class='btn btn-primary  btnHome'>
+						<h2>
+							<samp th:text="${titulo3}"></samp>
+						</h2>
+					</a>
+				</div>			
+			</div>
+			<div class="colunaB">
+				<div class="">
+			    <a href="veiculo/listar" class='btn btn-primary  btnHome'>
+					<h2>
+						<samp th:text="${titulo4}"></samp>
+					</h2>
+				</a>
+			</div>
+			<div class="">
+			    <a href="marca/listar" class='btn btn-primary btnHome'>
+					<h2>
+						<samp th:text="${titulo5}"></samp>
+					</h2>
+				</a>
+			</div>
+			<div class="">
+			    <a href="cor/listar" class='btn btn-primary btnHome'>
+					<h2>
+						<samp th:text="${titulo6}"></samp>
+					</h2>
+				</a>
+			</div>
+			</div>
+			<div class='titulo'>
+				<p class="text-center mt-0">
+					<span>Copyright © 2021</span> - Desenvolvido por: <br><strong>Andrey Diógenes Lima da Silva - RA: 11207</strong> - <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5544984365263"></a><i class="fab fa-whatsapp"></i> (44) 9 8436-5263
+					<strong>/</strong>
+					<strong>Anderson Matheus Adati Nanni - RA: 11205</strong> - <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5544984365263"></a><i class="fab fa-whatsapp"></i> (44) 9 9137-0290
+				</p>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

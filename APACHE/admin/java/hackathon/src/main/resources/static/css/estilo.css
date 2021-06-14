@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+h1 {
+	color: black;
+	font-size: 18pt;
+}
+
+.titulo {
+	margin-left: 50px;
+	text-align: center;
+}
+
+.blocoImagem{
+	position: relative;
+	max-width: 50px;
+  	height: 50px;  
+  	overflow: hidden;
+}
+	
+.blocoImagem img{
+	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	width: auto;
+   	-webkit-transform: translate(-50%,-50%);
+     	-ms-transform: translate(-50%,-50%);
+       transform: translate(-50%,-50%);
+}
+
+.tamanhoLinha{
+	height: 70px;
+}
+table tbody tr td{
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+table thead tr th{
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+.btnEditar {
+	background: #b3d5e8;
+}
+

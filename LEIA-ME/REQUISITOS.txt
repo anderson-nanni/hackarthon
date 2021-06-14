@@ -1,0 +1,5 @@
+Programas Necessários
+Spring Boot ou pogama equivalente.
+Sublime , Visual Studio ou programa equivalente.
+
+Java JDK - 11
