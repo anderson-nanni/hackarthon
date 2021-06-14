@@ -3,3 +3,6 @@ Spring Boot ou pogama equivalente.
 Sublime , Visual Studio ou programa equivalente.
 
 Java JDK - 11
+
+Para abrir o arquivo principal do java na IDE, importe o arquivo que esta em: 
+hackarthon\APACHE\admin\java

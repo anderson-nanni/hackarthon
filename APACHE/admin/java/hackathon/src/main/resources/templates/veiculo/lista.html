@@ -6,12 +6,13 @@
 </head>
 <body>
 	<div class="container">
-		<a href="/">
-			<h1><img th:src="@{'/icons/logo_hackarthon.png'}" width="150" height="80"/></h1>
+		<a href="/" class="titulo">
+			<h1><img th:src="@{'/icons/logo_hackarthon.png'}"  width="200" height="auto"/></h1>
+			<p class="tituloP"><─ VOLTAR</p>
 		</a>
-		<h1>Lista de Veiculos</h1>
+		<h1 class="titulo">Lista de Veiculos</h1>
 
-		<table class="table table-striped table-bordered table-hover">
+		<table class="table table-striped table-responsive table-bordered table-hover">
 			<thead>
 				<tr>
 					<th>Id</th>
@@ -19,12 +20,12 @@
 					<th>Ano do Modelo</th>
 					<th>Ano de Fabricação</th>
 					<th>Valor</th>
-					<th>Foto Destaque</th>
 					<th>Tipo</th>
 					<th>Marca</th>
 					<th>Cor</th>
 					<th>Usuario</th>
 					<th>Opcionais</th>
+					<th>Foto Destaque</th>
 					<th>...</th>
 					<th>...</th>
 				</tr>
@@ -36,12 +37,12 @@
 					<td th:text="${#strings.substring(v.anoModelo,0,4)}"></td>
 					<td th:text="${#strings.substring(v.anoFabricacao,0,4)}"></td>
 					<td>R$ <span th:text="${#numbers.formatDecimal(v.valor, 0, 'POINT', 2, 'COMMA')}"></span></td>
-					<td class="blocoImagem"><img th:src="@{'/images_upload/' + ${v.fotoDestaque}}" width="50" height="50"></td>
 					<td th:text="${v.tipo}"></td>
 					<td th:text="${v.marca.descricao}"></td>
 					<td th:text="${v.cor.nomeCor}"></td>
 					<td th:text="${v.usuario.nome}"></td>
 					<td th:text="${v.opcionais}"></td>
+					<td class="blocoImagem"><img th:src="@{'/images_upload/' + ${v.fotoDestaque}}" width="50" height="50"></td>
 					<td>
 						<a th:href="@{editar/(id=${v.id})}" class="btn btn-primary btnEditar">
 							<img th:src="@{'/icons/editar.png'}" width="15" height="15"/>

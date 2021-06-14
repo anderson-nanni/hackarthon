@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Jun-2021 às 03:41
--- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.4.9
+-- Tempo de geração: 14-Jun-2021 às 21:55
+-- Versão do servidor: 10.4.13-MariaDB
+-- versão do PHP: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,7 +44,8 @@ INSERT INTO `cor` (`idcor`, `cor`) VALUES
 (5, 'Preto'),
 (6, 'Branco perolizado'),
 (7, 'Cinza'),
-(8, 'Azul');
+(8, 'Azul'),
+(10, '');
 
 -- --------------------------------------------------------
 
@@ -189,7 +190,7 @@ ALTER TABLE `veiculo`
 -- AUTO_INCREMENT de tabela `cor`
 --
 ALTER TABLE `cor`
-  MODIFY `idcor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `idcor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `marca`
@@ -213,7 +214,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `veiculo`
 --
 ALTER TABLE `veiculo`
-  MODIFY `idveiculo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idveiculo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Restrições para despejos de tabelas

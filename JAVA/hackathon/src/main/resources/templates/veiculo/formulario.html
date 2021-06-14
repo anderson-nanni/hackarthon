@@ -5,12 +5,13 @@
 	</head>
 	<body>
 		<div class="container">
-			<a href="/">
-				<h1><img th:src="@{'/icons/logo_hackarthon.png'}" width="150" height="80"/></h1>
+			<a href="/" class="titulo">
+				<h1><img th:src="@{'/icons/logo_hackarthon.png'}"  width="200" height="auto"/></h1>
+				<p class="tituloP"><─ VOLTAR</p>
 			</a>
-			<h1>Cadastro de Veiculos</h1>
+			<h1 class="titulo">Cadastro de Veiculos</h1>
 
-			<form action="salvar" method="post" enctype="multipart/form-data">
+			<form action="salvar" method="post" enctype="multipart/form-data" class="formularioCentro">
 				<div class=form-group>
 					<br>
 					<label>Modelo</label>
@@ -54,7 +55,7 @@
 					
 					<input type="hidden" id="id" name="id" th:value="${veiculo.id}" th:if="${veiculo != null}">
 				</div>
-				<button type="submit" class="btn btn-success">Salvar</button>
+				<button type="submit" class="btn btn-form">Salvar</button>		
 			</form>
 
 		<div th:include="footer :: copy"></div>
